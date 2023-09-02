@@ -1,0 +1,16 @@
+Pour faire des threads --> redéfinition de la classe Thread:
+possibilité de mettre des verrous avec lock= threading.Lock():
+with lock:
+    quand un thread detient le verrou, pas d'autres threads peut rentrer
+
+Queue (file):q=Queue(maxsize=number_items)
+structure de donnée partagée entre les threads --> pratique pour partager de l'information entre les threads.
+
+si on redéfinit la class thread: contexte d'exécution du threads, les attribut CRÉÉS dans la classe, pas passer en paramètre au contructeur
+de la classe.
+Si on veut partager des variables entre les threads, passage de paramètre objet obj au contructeur des différents class:
+thread1=Thread1(obj_partagee_entre_thread1_et_2)
+thread2=Thread2(obj_partagee_entre_thread1_et_2)
+comme passage par référence car c'est un objet qu'on passe au paramètre pas un type primitifs de type par exemple int car
+int est passé par valeur au contructeur et non pas par référence.
+Très pratique

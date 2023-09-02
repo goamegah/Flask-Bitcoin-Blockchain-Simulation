@@ -1,0 +1,27 @@
+https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf
+--> papier satochi nakamoto (créateur du bitcoin)
+
+
+PLAN:
+Introduction)
+A-I) fonctionement de la blockchain Bitcoin (Proof of work)
+A-II)Potentielles attaques sur cette blockchain
+    - fragilité de l'algorithme (SHA-256) / attaque brute force
+    - Règle des 51%
+A-III) Limite de la blockchain Bitcoin
+A développer...
+
+B-I) Solution --> fonctionnement blockchain Ethereum: Proof of Stake
+B-II) Limites de cette blockchain/ attaques possibles
+B-III) Application blockchain Ethereum (smart contract, création de monnaie...)
+
+-->Mettre des données : registre des blocs/nombres de transactions par jour/ utilisation de l'énergie...
+
+Partie technique:
+-Simulation de blockchain Bitcoin/ Ethereum
+    --> envoi de paquets/messages | plus difficile simulation d'une économie.
+-Dévelopement de smart-contract sur Solidity (Ethereum).
+
+
+
+transactions signées:https://bitcoin.fr/comprendre-la-signature-des-transactions-bitcoin/

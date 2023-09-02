@@ -1,0 +1,12 @@
+#Transaction class
+INIT_TRANSACTION=["INIT"]
+FEES=0.01
+
+#Block class
+INIT_BLOCK=True
+MINING_DIFFICULTY=15
+
+#Node class
+PORT_BEGIN=10001
+N=201
+TIMEOUT=5

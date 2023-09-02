@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Transaction Coordinator</title>
+    </head>
+    <body>
+        <h2>Select Transaction Amount</h2>
+        <p>A coordinator has been chosen, select the amount of the transaction. A transaction will be automatically generated with the public/private keys of sender/receiver generated automatically and the transaction integrated into the blockchain.</p>
+        <form action="/transactions" method="post">
+            <p>Amount :<input type="number" name="amount"></p>
+            <p>Number nodes:{{ number_of_nodes }}</p>
+            <input type="submit" value="Submit">
+        </form>
+        <form action="/blockchain" method="get">
+            <input type="submit" value="View Blockchain">
+        </form>
+
+        <form>
+            <input id="button_pow_id" type="submit" value="Proof of Work Iterations" onclick="getNonce()">
+        </form>
+        <form action="/choose" method="get">
+            <input type="submit" value="Choose other coordinator">
+        </form>
+            <p id="nonce_id">Number of iterations to found Nonce: {{ nonce }}</p>
+
+        <script>
+             function getNonce() {
+                location.reload()
+            };
+        </script>
+
+        <style>
+
+            body {
+                background-color: #e9f1f7;
+            }
+
+            h2 {
+                text-align: center;
+                color: #2b4f91;
+            }
+
+            p {
+                font-size: 18px;
+                color: #1a75ff;
+                margin: 20px auto;
+                width: 400px;
+                text-align: center;
+            }
+
+            form {
+                width: 400px;
+                margin: 20px auto;
+                background-color: #fff;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px 0px #ccc;
+            }
+
+            input[type="number"] {
+                width: 100%;
+                height: 40px;
+                font-size: 18px;
+                padding: 5px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                box-shadow: 0px 0px 5px 0px #ccc;
+            }
+
+            input[type="submit"] {
+                width: 100%;
+                height: 40px;
+                background-color: #2b4f91;
+                border: 0;
+                border-radius: 5px;
+                color: #fff;
+                font-size: 18px;
+                cursor: pointer;
+            }
+        </style>
+</body>
+</html>
